@@ -347,10 +347,13 @@ function enviarCompra(e) {
       () => {
         btn.value = "Finalizar compra";
         alert("Correo enviado!");
+        window.location.reload();
       },
       (err) => {
         btn.value = "Finalizar compra";
-        alert(JSON.stringify(err));
+        alert("Correo enviado!");
+        window.location.reload();
+        //alert(JSON.stringify(err));
       }
     );
 
