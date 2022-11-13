@@ -1,0 +1,134 @@
+:root {
+  --primary-color: #ff5e3a;
+  --default-color: #4f5665;
+  --black-color: #000;
+  --grey-color: #f0f0f0;
+  --white-color: #fff;
+  --lightpink: #ffcce0;
+  --blue: #1a1aff;
+  --custom: #1a1aff;
+  --color: #4d4d4d;
+  --lightblue: #ccccff;
+  --box-shadow-1: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --box-shadow-2: 0 5px 15px rgba(255, 94, 58, 0.2);
+  --gradient: linear-gradient(to bottom, #fccb90, #ff9a9e);
+  --btn-gradient: linear-gradient(to bottom, #ff5151 50%, #ff5e3a);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.imagen {
+  max-width: 100%;
+}
+
+.menu ul li {
+  display: inline-block;
+}
+
+a {
+  cursor: pointer;
+}
+.alerta {
+  font-weight: 700;
+}
+body {
+  background-color: #e3d8d6;
+  overflow-x: hidden;
+}
+.modal-contenedor {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.img-carrito {
+  width: 200px;
+  padding: 20px;
+}
+.modal-content {
+  background-color: #e3d8d6;
+}
+.parrafo {
+  font-weight: 900;
+  font-style: italic;
+}
+#precioTotal {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+.boton {
+  opacity: 0;
+}
+#contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: white;
+  color: #464646;
+  cursor: pointer;
+}
+
+.card:hover {
+  background-color: #252422;
+  color: #edf2f4;
+  cursor: pointer;
+}
+
+.header .hero {
+  height: 80vh;
+  margin: 0 3rem;
+}
+.header .hero .row {
+  height: 100%;
+  background: url("../images/bg.svg") center/cover no-repeat fixed;
+  border-radius: 2rem;
+  position: relative;
+}
+.header .hero .row .col {
+  margin-left: 5rem;
+}
+.header .hero .row .col .subtitle {
+  display: block;
+  font-size: 1.8rem;
+  margin-bottom: 4rem;
+}
+.header .hero .row .col h1 {
+  font-family: "Aclonica", sans-serif;
+  font-size: 13rem;
+  line-height: 1;
+}
+.header .hero .row .col h1 .i {
+  color: var(--primary-color);
+  position: relative;
+}
+.header .hero .row .col h1 .i:before {
+  content: "ı";
+  position: absolute;
+  color: var(--black-color);
+}
+.header .hero .row .col p {
+  font-size: 2rem;
+  margin-bottom: 6rem;
+}
+.header .hero .row .col .btn {
+  display: inline-block;
+  padding: 1.5rem 6rem;
+  border-radius: 1rem;
+  color: var(--white-color);
+  font-weight: 500;
+  font-size: 1.8rem;
+  background: var(--btn-gradient);
+  box-shadow: var(--box-shadow-1);
+}
+.header .hero .row img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
